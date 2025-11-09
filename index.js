@@ -26,4 +26,7 @@ app.get("/", async (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log("Servidor ID3 listo 🎧"));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Servidor ID3 listo 🎧 en puerto ${PORT}`));
+
+
